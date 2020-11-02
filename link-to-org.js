@@ -28,8 +28,6 @@ browser.contextMenus.onClicked.addListener((info, tab) => {
     if (info.menuItemId === "link-to-org") {
         // Generate the string which is the equivalent for the org-mode format.
         var text = "[[" + info.linkUrl + "]["+ info.linkText +"]]";
-        console.log(info);
-        console.log(window.getSelection().toString());
 
         // And now just copy the string into the clipboard. It will show a
         // notification on error.
