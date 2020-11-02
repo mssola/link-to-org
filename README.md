@@ -6,7 +6,11 @@
 
 Simple browser extension that allows users to copy page links into the clipboard while transforming them into the [org mode](https://orgmode.org/) format. This is done by adding a new item on the context menu of links, as shown on the following picture:
 
-![Demo](./doc/demo.png)
+<p align="center">
+  <a target="_blank" rel="noopener noreferrer" href="./doc/demo.png">
+    <img src="./doc/demo.png" alt="Demo" style="max-width:80%;">
+  </a>
+</p>
 
 As you can see, this has been localized. If you are missing a language, feel free to [contribute with a translation](./CONTRIBUTING.org).
 
