@@ -16,7 +16,7 @@ As you can see, this has been localized. If you are missing a language, feel fre
 
 ### Known issues
 
-It does not work for Google Chrome. I first wrote this extension on Firefox, since this is the browser I use. That being said, then I noticed that it does not work for Chrome at all. First of all, it doesn't like the [Clipboard API](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API), which is a bummer since the equivalent code is quite ugly. But more importantly, and stupidly enough, I don't seem to be able to fetch the text of the selected link (which sounds really stupid and dead easy in other JS contexts). If you know how to do this, please send me a [pull request](./CONTRIBUTING.org).
+It does not work for Google Chrome. I first wrote this extension on Firefox, since this is the browser I use, but then I noticed that it does not work for Chrome at all. First of all, Chrome doesn't seen to like the [Clipboard API](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API), which is a bummer since the equivalent code is quite ugly. But more importantly, and stupidly enough, I don't seem to be able to fetch the text of the selected link (which is dead easy in other JS contexts). If you know how to do this, please send me a [pull request](./CONTRIBUTING.org).
 
 ## Contributing
 
