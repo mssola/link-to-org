@@ -1,0 +1,21 @@
+{
+    "extensionName": {
+        "message": "HTML link to org mode",
+        "description": "Name of the extension"
+    },
+
+    "extensionDescription": {
+        "message": "Copies HTML links while transforming them into org mode format.",
+        "description": "Description of the extension."
+    },
+
+    "contextMenuItemLinkToOrg": {
+        "message": "Copy link to clipboard in org-mode format",
+        "description": "The item of the context menu for this addon."
+    },
+
+    "linkToOrgFailed": {
+        "message": "Failed to copy link into the clipboard",
+        "description": "Error to display when we couldn't write into the clipboard."
+    }
+}

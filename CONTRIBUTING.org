@@ -1,0 +1,27 @@
+#+STARTUP:showall
+
+* Contributing
+
+** Testing
+
+This is done manually and you can check it out by cloning this repo and following [[https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension][these instructions]].
+
+** Translations
+
+Everything is located inside of the [[./_locales][_locales]] directory and it is following [[https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Internationalization][these instructions]]. Thus, if you just want to create a new translation, simply create a new subdirectory with the code of the language you want to add, and just add a =messages.json= file with the translations in it.
+
+** Issue reporting
+
+I'm using [[https://github.com/mssola/cmake-build][Github]] in order to host the code. Thus, in order to report issues you can do it on its [[https://github.com/mssola/cmake-build/issues][issue tracker]]. A couple of notes on reports:
+
+- Check that the issue has not already been reported or fixed in =master=.
+- Try to be concise and precise in your description of the problem.
+- Provide a step by step guide on how to reproduce this problem.
+- Provide the version you are using (git commit SHA), as well as the name and the version of the web browser.
+
+** Pull requests
+
+- Write a [[https://chris.beams.io/posts/git-commit/][good commit message]].
+- Manually check that you haven't broken the whole thing.
+- Update the [[./CHANGELOG.org][changelog]] (if relevant).
+- Open a pull request with *only* one subject and a clear title and description. Refrain from submitting pull requests with tons of different unrelated commits.

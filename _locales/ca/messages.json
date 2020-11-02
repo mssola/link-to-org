@@ -1,0 +1,21 @@
+{
+    "extensionName": {
+        "message": "Enllaç d'HTML a mode d'org",
+        "description": "Nom de l'extensió"
+    },
+
+    "extensionDescription": {
+        "message": "Copia enllaços d'HTML al format del mode d'org.",
+        "description": "Descripció de l'extensió"
+    },
+
+    "contextMenuItemLinkToOrg": {
+        "message": "Copia l'enllaç al porta-retalls en el format d'org",
+        "description": "L'element del menú de context d'aquesta extensió."
+    },
+
+    "linkToOrgFailed": {
+        "message": "Error en copiar l'enllaç al porta-retalls",
+        "description": "Error genèric a mostrar quan no s'ha pogut copar l'enllaç al porta-retalls."
+    }
+}

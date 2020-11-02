@@ -1,0 +1,7 @@
+#+STARTUP:showall
+
+* Changelog
+
+** 0.1
+
+- Initial release: you can copy an HTML link into the clipboard in the org-mode format. This is only known to work on Firefox.

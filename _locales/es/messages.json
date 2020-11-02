@@ -1,0 +1,21 @@
+{
+    "extensionName": {
+        "message": "Enlace de HTML al modo org",
+        "description": "Nombre de la extensión."
+    },
+
+    "extensionDescription": {
+        "message": "Copia enlaces de HTML transformándolos en el formato del modo de org.",
+        "description": "Descripción de la extensión."
+    },
+
+    "contextMenuItemLinkToOrg": {
+        "message": "Copia enlace al portapapeles en el formato de org",
+        "description": "El elemento en el menú de contexto para esta extensión."
+    },
+
+    "linkToOrgFailed": {
+        "message": "Error en copiar el enlace al portapapeles",
+        "description": "Error genérico a mostrar cuando no se pudo copiar al portapapeles."
+    }
+}
