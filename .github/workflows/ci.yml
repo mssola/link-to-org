@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Super-Linter
+        env:
+          # The README.md has some stuff that is out from the linter's taste,
+          # but it's done on purpose.
+          VALIDATE_MARKDOWN: false
+        uses: github/super-linter@v3.13.5
