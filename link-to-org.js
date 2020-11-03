@@ -16,29 +16,30 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-var browser = browser || chrome;
+// Small hack so Chrome is happy.
+var browser = browser || chrome // eslint-disable-line
 
 browser.contextMenus.create({
-    id: "link-to-org",
-    title: browser.i18n.getMessage("contextMenuItemLinkToOrg"),
-    contexts: ["link"],
-});
+  id: 'link-to-org',
+  title: browser.i18n.getMessage('contextMenuItemLinkToOrg'),
+  contexts: ['link']
+})
 
 browser.contextMenus.onClicked.addListener((info, tab) => {
-    if (info.menuItemId === "link-to-org") {
-        // Generate the string which is the equivalent for the org-mode format.
-        var text = "[[" + info.linkUrl + "]["+ info.linkText +"]]";
+  if (info.menuItemId === 'link-to-org') {
+    // Generate the string which is the equivalent for the org-mode format.
+    const text = '[[' + info.linkUrl + '][' + info.linkText + ']]'
 
-        // And now just copy the string into the clipboard. It will show a
-        // notification on error.
-        navigator.clipboard.writeText(text).then(() => {}, (error) => {
-            console.log(error);
-            browser.notifications.create({
-                "type": "basic",
-                "iconUrl": browser.extension.getURL("icons/48.png"),
-                "title": browser.i18n.getMessage("extensionName"),
-                "message": browser.i18n.getMessage("linkToOrgFailed")
-            });
-        });
-    }
-});
+    // And now just copy the string into the clipboard. It will show a
+    // notification on error.
+    navigator.clipboard.writeText(text).then(() => {}, (error) => {
+      console.log(error)
+      browser.notifications.create({
+        type: 'basic',
+        iconUrl: browser.extension.getURL('icons/48.png'),
+        title: browser.i18n.getMessage('extensionName'),
+        message: browser.i18n.getMessage('linkToOrgFailed')
+      })
+    })
+  }
+})

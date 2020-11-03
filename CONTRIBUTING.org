@@ -6,6 +6,13 @@
 
 This is done manually and you can check it out by cloning this repo and following [[https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension][these instructions]].
 
+Moreover, the CI will also check the style being used. I'm using StandardJS for that. You can simply install it with yarn (or any other javascript package manager), and then call it locally like so:
+
+#+BEGIN_SRC bash
+$ yarn
+$ yarn run standard
+#+END_SRC
+
 ** Translations
 
 Everything is located inside of the [[./_locales][_locales]] directory and it is following [[https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Internationalization][these instructions]]. Thus, if you just want to create a new translation, simply create a new subdirectory with the code of the language you want to add, and just add a =messages.json= file with the translations in it.

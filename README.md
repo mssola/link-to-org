@@ -1,4 +1,5 @@
 <p align="center">
+  <a href="https://github.com/mssola/link-to-org/actions" title="CI status for the main branch"><img src="https://github.com/mssola/link-to-org/workflows/CI/badge.svg?branch=main" alt="Build Status for main branch" /></a>
   <a href="http://www.gnu.org/licenses/gpl-3.0.txt" rel="nofollow"><img alt="License GPL 3" src="https://img.shields.io/badge/license-GPL_3-blue.svg" style="max-width:100%;"></a>
 </p>
 
