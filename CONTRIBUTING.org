@@ -13,6 +13,13 @@ $ yarn
 $ yarn run standard
 #+END_SRC
 
+Moreover, you can also check a couple of things for the extension itself with =web-ext=. You can use some shortcuts defined in the =package.json= file:
+
+#+BEGIN_SRC bash
+$ yarn run build
+$ yarn run lint
+#+END_SRC
+
 ** Translations
 
 Everything is located inside of the [[./_locales][_locales]] directory and it is following [[https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Internationalization][these instructions]]. Thus, if you just want to create a new translation, simply create a new subdirectory with the code of the language you want to add, and just add a =messages.json= file with the translations in it.
